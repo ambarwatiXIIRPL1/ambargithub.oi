@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 65%;
+  background-color: #A52A2A;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #DEB887;
+  padding: 10px;
+  text-align: edge;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 80%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>nasi padang indonesia</h2>
+<p></p>
+
+<header>
+  <h2>NASI PADANG</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Asal</a></li>
+      <li><a href="#">Bahan</a></li>
+      <li><a href="#">Alat</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>asal</h1>
+    <p>Nasi padang yang disajikan di restoran padang mudah ditemukan di berbagai kota di Indonesia, seperti Sumatra, Jawa, Kalimantan, Sulawesi, Nusa Tenggara, dan Papua, ke negara-negara tetangga Malaysia dan Singapura,[3] dan Australia karena masyarakat Minangkabau memiliki kebiasaan merantau (imigrasi), memberikan kontribusi terhadap penyebaran perantau Minang melampaui batas kampung halaman mereka di Sumatra Barat. Berdasarkan CNN Travel, nasi padang terdaftar sebagai salah satu dari 40 makanan yang masyarakat Singapura tidak bisa hidup tanpanya.</p>
+  </article>
+</section>
+
+<footer>
+  <p>thanks by;ambarwati</p>
+</footer>
+
+</body>
+</html>
