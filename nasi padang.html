@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: 	#F0F8FF;
+  padding: 38px;
+  text-align: center;
+  font-size: 32px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>Bahan-bahan
+500 gr daging ayam
+500 ml santan kental
+200 ml air
+2 batang serai geprek
+4 lbr daun jeruk
+2 lbr daun salam
+1 lbr daun kunyit
+1 buah bunga lawang
+secukupnya Garam, gula
+2 sdm kelapa parut sangrai, haluskan
+Bumbu Halus:
+8 buah bawang merah
+5 buah bawang putih
+8 buah cabe merah
+1/4 biji pala
+1/2 sdm ketumbar
+1 ruas jahe
+3 cm lengkuas
+1 ruas kunyit
+Sambal ijo:
+20 buah cabe ijo keriting
+10 buah cabe rawit ijo
+2 buah tomat hijau
+4 buah bawang merah
+Secukupnya garam, gula</p>
+<p>Langkah
+Campur bumbu halus, bumbu pelengkap dan santan, Aduk rata. Masak sambil sesekali diaduk, sampai agak menyusut airnya.
+Kemudian masukkan daging ayam. (Ayam dimasukkan tengah2 agar ayam tdk hancur dimasak lama. Krn pakai ayam negeri, bukan pakai ayam kampung). Masak sampai matang, bumbu meresap ke dalam ayam dan air menyusut. Koreksi rasa, angkat sajikan.
+Kukus cabe ijo keriting, cabe rawit ijo, tomat hijau, bawang merah. Setelah agak lunak. Angkat. Kemudian uleg kasar.
+Setelah itu tumis dengan minyak goreng. Tambahkan garam, gula secukupnya. Koreksi rasa. Siap sajikan.</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">asal</a></li>
+      <li><a href="#">alat dan bahan </a></li>
+      <li><a href="#">sejarah</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>asal</h1>
+    <p>Nasi padang yang disajikan di restoran padang mudah ditemukan di berbagai kota di Indonesia, seperti Sumatra, Jawa, Kalimantan, Sulawesi, Nusa Tenggara, dan Papua, ke negara-negara tetangga Malaysia dan Singapura,[3] dan Australia karena masyarakat Minangkabau memiliki kebiasaan merantau (imigrasi), memberikan kontribusi terhadap penyebaran perantau Minang melampaui batas kampung halaman mereka di Sumatra Barat. Berdasarkan CNN Travel, nasi padang terdaftar sebagai salah satu dari 40 makanan yang masyarakat Singapura tidak bisa hidup tanpanya.[4</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
